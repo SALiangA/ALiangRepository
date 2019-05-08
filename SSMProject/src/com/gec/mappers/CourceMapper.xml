@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.gec.dao.CourceMapper">
+	<select id="getCourceById" resultMap="courceMap">
+		select * from cource where id=#{id}
+	</select>
+	<resultMap type="com.gec.domain.Cource" id="courceMap">
+		<id column="id" property="id"/>
+		<result column="cource_name" property="courceName"/>
+	</resultMap>
+	<!--修改 -->
+	<update id="saveCource">
+	<!--  -->
+		update cource set cource_name=#{courceName} where id=#{id}
+	</update>
+</mapper>
