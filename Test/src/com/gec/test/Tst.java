@@ -11,4 +11,8 @@ public class Tst {
 	public void update() {
 		System.out.println("这是阿良写的修改方法");
 	}
+	
+	public void update1() {
+		System.out.println("这是阿良写的修改方法1");
+	}
 }
