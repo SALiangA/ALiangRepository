@@ -15,4 +15,8 @@ public class Tst {
 	public void update1() {
 		System.out.println("这是阿良写的修改方法1");
 	}
+	
+	public void update2() {
+		System.out.println("20:26更新了一个方法");
+	}
 }
